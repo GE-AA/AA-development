@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QGraphicsView" name="graphicsView"/>
+      </item>
+      <item>
+       <widget class="QTabWidget" name="tabWidget">
+        <property name="currentIndex">
+         <number>3</number>
+        </property>
+        <widget class="QWidget" name="tab">
+         <property name="whatsThis">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <attribute name="title">
+          <string>Load data</string>
+         </attribute>
+         <widget class="QLabel" name="label_2">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>20</y>
+            <width>81</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Load data</string>
+          </property>
+         </widget>
+         <widget class="QWidget" name="">
+          <property name="geometry">
+           <rect>
+            <x>110</x>
+            <y>200</y>
+            <width>147</width>
+            <height>78</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <property name="spacing">
+            <number>20</number>
+           </property>
+           <item>
+            <widget class="QPushButton" name="pushButton">
+             <property name="text">
+              <string>Load single image</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_2">
+             <property name="text">
+              <string>Load all image</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tab_2">
+         <attribute name="title">
+          <string>Segment</string>
+         </attribute>
+         <widget class="QLabel" name="label">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>20</y>
+            <width>161</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Image segmentation</string>
+          </property>
+         </widget>
+         <widget class="QWidget" name="">
+          <property name="geometry">
+           <rect>
+            <x>130</x>
+            <y>210</y>
+            <width>115</width>
+            <height>78</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <property name="spacing">
+            <number>20</number>
+           </property>
+           <item>
+            <widget class="QPushButton" name="pushButton_3">
+             <property name="text">
+              <string>Load ROI data</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_4">
+             <property name="text">
+              <string>Segmentation</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tab_3">
+         <attribute name="title">
+          <string>Calculate</string>
+         </attribute>
+         <widget class="QLabel" name="label_3">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>30</y>
+            <width>151</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Calculate features</string>
+          </property>
+         </widget>
+         <widget class="QWidget" name="">
+          <property name="geometry">
+           <rect>
+            <x>130</x>
+            <y>180</y>
+            <width>95</width>
+            <height>78</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <property name="spacing">
+            <number>20</number>
+           </property>
+           <item>
+            <widget class="QPushButton" name="pushButton_5">
+             <property name="text">
+              <string>Calculate</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_6">
+             <property name="text">
+              <string>Save</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tab_4">
+         <attribute name="title">
+          <string>Machine learning</string>
+         </attribute>
+         <widget class="QLabel" name="label_4">
+          <property name="geometry">
+           <rect>
+            <x>11</x>
+            <y>11</y>
+            <width>184</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Machine learning models</string>
+          </property>
+         </widget>
+         <widget class="QStackedWidget" name="stackedWidget">
+          <property name="geometry">
+           <rect>
+            <x>11</x>
+            <y>33</y>
+            <width>356</width>
+            <height>401</height>
+           </rect>
+          </property>
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <widget class="QWidget" name="page_3">
+           <widget class="QLabel" name="label_6">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>20</y>
+              <width>111</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Decision tree</string>
+            </property>
+           </widget>
+           <widget class="QWidget" name="">
+            <property name="geometry">
+             <rect>
+              <x>90</x>
+              <y>100</y>
+              <width>173</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_5">
+             <item>
+              <widget class="QLineEdit" name="lineEdit_3"/>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEdit_4"/>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+          <widget class="QWidget" name="page_4">
+           <widget class="QLabel" name="label_5">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>20</y>
+              <width>171</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Logistic regression</string>
+            </property>
+           </widget>
+           <widget class="QWidget" name="">
+            <property name="geometry">
+             <rect>
+              <x>50</x>
+              <y>90</y>
+              <width>173</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_4">
+             <item>
+              <widget class="QLineEdit" name="lineEdit"/>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEdit_2"/>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="">
+          <property name="geometry">
+           <rect>
+            <x>80</x>
+            <y>460</y>
+            <width>208</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <property name="spacing">
+            <number>20</number>
+           </property>
+           <item>
+            <widget class="QPushButton" name="pushButton_7">
+             <property name="text">
+              <string>Load CSV</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_8">
+             <property name="text">
+              <string>Fit model</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tab_5">
+         <attribute name="title">
+          <string>Deep learning</string>
+         </attribute>
+        </widget>
+        <widget class="QWidget" name="tab_6">
+         <attribute name="title">
+          <string>Evaluate</string>
+         </attribute>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuMenu">
+    <property name="title">
+     <string>Menu</string>
+    </property>
+    <addaction name="actionHelp"/>
+   </widget>
+   <addaction name="menuMenu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionHelp">
+   <property name="text">
+    <string>Help</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>graphicsView</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>loadSingle()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>588</x>
+     <y>269</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>522</x>
+     <y>28</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>loadAll()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>642</x>
+     <y>325</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>568</x>
+     <y>35</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>loadROI()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>556</x>
+     <y>286</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>404</x>
+     <y>31</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>segment()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>645</x>
+     <y>327</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>791</x>
+     <y>280</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_5</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>calculate()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>605</x>
+     <y>258</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>797</x>
+     <y>215</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_6</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>save()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>551</x>
+     <y>307</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>797</x>
+     <y>307</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_7</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>loadCSV()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>520</x>
+     <y>531</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>580</x>
+     <y>572</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>loadSingle()</slot>
+  <slot>loadAll()</slot>
+  <slot>loadROI()</slot>
+  <slot>segment()</slot>
+  <slot>calculate()</slot>
+  <slot>save()</slot>
+  <slot>loadCSV()</slot>
+ </slots>
+</ui>
